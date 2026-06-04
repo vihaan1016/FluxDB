@@ -3,3 +3,7 @@ resolver = "2"
 members = ["crates/*"]
 
 [workspace.dependencies]
+clap = { version = "4", features = ["derive"] }
+common = { path = "crates/common" }
+thiserror = "1"
+db-core = { path = "crates/db-core"}
